@@ -1,0 +1,275 @@
+#myModal
+{
+    margin-top: 7%;
+}
+
+.btnClose
+{
+    font-family: poppins;
+    letter-spacing: 2px;
+}
+
+.login
+{
+    text-align: center !important;
+    font-weight: bold !important;
+    padding: 5px !important;    
+}
+
+
+
+.hr
+{
+    border-bottom: 2px solid #337ab7;
+}
+
+.loginLinks li a:hover
+{
+    color:white !important;
+}
+
+.loginLinks li a
+{
+    color:whitesmoke !important;
+}
+
+.heading
+{
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 35px;        
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-dialog {
+    
+     position: absolute; 
+}
+
+@media screen and (min-width: 768px) {
+.modal-dialog {
+    left: 30% !important;
+    width: 600px;
+    top:0%;
+    padding:0px !important;
+    margin:0px !important;
+}
+}
+.slider
+{
+    border-bottom: 3px solid #3D9AEB;
+    margin-top:0%;
+}
+
+.box
+{
+    padding: 5px;
+    border: 1px solid #57A5FF;
+    border-top : 0px;
+    border-left: 0px; 
+    background-color: white;
+    box-shadow: 5px 5px 5px 0px grey;
+}
+
+.desc
+{
+    font-family: Arial;
+}
+
+.btnReg
+{
+    border-radius: 0px !important;
+    font-family: poppins;
+    letter-spacing: 3px;
+}
+
+.carousel-indicators li
+{
+    border: 2px solid #3D9AEB !important;
+    padding: 7px;
+    float: right;
+}
+
+.carousel-indicators .active
+{
+    padding: 7px !important;
+    background-color: #57A5FF !important;
+}
+
+.slideArrow
+{
+    color: #57A5FF !important;
+}
+
+.slideArrow span
+{
+    
+    font-size: 50px !important;
+}
+
+.tabs-left
+{
+    border-bottom: none !important;
+    padding-top: 2px !important;
+}
+  .tabs-left 
+{
+    border: 1px solid #ddd !important;
+}
+  
+  .tabs-left>li
+  {
+    float: none !important;
+    margin-bottom: 2px !important;
+    border-bottom: 1px solid #ddd !important;
+    padding: 2px !important;
+  }
+
+  .tabs-left>li 
+  {
+    margin-right: -1px !important;
+  }
+
+  .tabs-left>li>a
+  {
+    color: black !important;
+  }
+
+  .tabs-left>li>a:hover
+  {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+
+  .hideBorder
+  {
+      border-bottom: 0px !important;
+  }
+  
+  
+  .tabs-left>li.active>a,
+  .tabs-left>li.active>a:hover,
+  .tabs-left>li.active>a:focus {
+
+    font-weight: bold !important;
+    border: 0px !important;
+  }
+
+.profData
+{
+    font-size: 30px !important;
+}
+
+.subTabs>li.active>a
+{
+    border: 0px !important;
+    color: #fa7732 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #fa7732 !important;
+}
+
+.subTabs>li>a
+{
+    color: black;
+}
+
+.subTabs>li>a:hover
+{
+    color: #fa7732 !important;
+    transition: 0.2s;
+    background-color: white;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
+.btnUpdate
+{
+    text-align: center;
+    background-color: #fa7732 !important;
+    color: white;
+}
+
+.text-bold
+{
+    font-weight:bold;
+}
+
+.imgSet
+{
+    border: 1px solid black !important;
+    width: 200px !important;
+    height: 180px !important;
+}
+
+.headerRow
+{
+    padding: 20px;
+}
+
+.infoEmp
+{
+    font-size:20px;
+}
+
+.reg
+{
+    margin-top: 18%;
+}
+
+.scndPaads
+{
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hr2
+{
+    border-color: #3D9AEB;
+}
+.add
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+.regForm
+{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+    .regForm
+    {
+        margin-top: 2%;
+    }  
+  }
+
+.tableDesign
+{
+    width: 100%;
+}
+
+.firstRow
+{
+    padding: 10px;
+}
+
+.txtBold
+{
+    font-weight: bold;
+}
+
+@font-face
+{
+    font-family: poppins;
+
+    src: url('../fonts/Poppins-Regular.otf');
+}

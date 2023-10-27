@@ -1,0 +1,109 @@
+.row
+{
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-12
+{
+    padding: 0;
+}
+
+.myNav
+{
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+.logo
+{
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+   .logo
+   {
+       width: 40%;
+   }
+   .navbar-fixed-top.scrolled
+   {
+       height: 20px !important;
+   }
+   .heading
+   {
+       font-size: 20px;
+   }
+   .para1
+    {
+    font-size: 12px !important;
+    }
+    .fPara
+    {
+        font-size: 12px !important;
+    }
+    .fLinks li a
+    {
+        font-size: 12px !important;
+    }
+  }
+
+.heading
+{
+    color: #030540;
+}
+
+.txtTitle
+{
+    font-weight: bold;
+}
+
+.para1
+{
+    font-size: 17px;
+}
+.navbar-fixed-top.scrolled {
+    background-color: #030540 !important;
+    transition: background-color 200ms linear;
+    height: 100px;
+}
+
+.bgColor
+{
+    background-color: #030540;
+}
+
+.fLinks
+{
+    list-style: none;
+}
+
+.fLinks li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.RLink
+{
+    color: yellow;
+}
+
+.fPara
+{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.fLogo
+{
+    margin-top: 2%;
+}
+
+.vidCol
+{
+    padding: 10px;
+}

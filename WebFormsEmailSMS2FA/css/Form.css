@@ -1,0 +1,15 @@
+.heading
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Workshop th, .Workshop .tableHeader td
+{
+    text-align: center;
+}
+
+.text-center
+{
+    text-align: center;
+}

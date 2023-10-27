@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site3.master.cs" Inherits="WebFormsEmailSMS2FA.Site3" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <asp:PlaceHolder runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="Content/siteMaster.css" rel="stylesheet" />
+       <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+</script>
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+            <%--Framework Scripts--%>
+            
+            <asp:ScriptReference Name="MsAjaxBundle" />
+            <asp:ScriptReference Name="jquery" />
+            <%--<asp:ScriptReference Name="jquery.ui.combined" />--%>
+            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            <asp:ScriptReference Name="WebFormsBundle" />
+            <%--Site Scripts--%>
+
+        </Scripts>
+    </asp:ScriptManager>
+
+
+        <!-- Navbar -->
+    
+    <nav class="navbar navbar-default navbar-fixed-top myNav" role="navigation">
+        <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="Pictures/GAP™-1.png" alt="" class="img img-responsive logo"></a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse mobColor">
+            <ul class="nav navbar-nav myMenu">
+                <li><a href="#">Home</a></li>
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">About &nbsp;<span class="caret"></span></a>
+                    <ul class="dropdown-menu subMenu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Missino</a></li>
+                        <li><a href="#">Audience</a></li>
+                        <li><a href="#">Education</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav myMenu navbar-right">
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+    
+ <!-- Navbar End -->
+
+
+
+
+
+
+
+
+
+
+
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+   
+        <!-- Footer -->
+    <div class="bgColor">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">                    
+                    <img src="Pictures/GAP™-1.png" alt="" class="img img-responsive fLogo">
+                <div class="row">
+                    <div class="col-md-3">
+                  <a href="https://www.facebook.com/Ghazihealthcare.Official/" target="blank"> <img src="Pictures/facebook.png" alt="" class="img img-responsive social"></a>     
+                    </div>
+                    <div class="col-md-3">
+                            <a href="https://www.instagram.com/GHAZIHEALTHCAREPAKISTAN/" target="blank"><img src="Pictures/instagram.png" alt="" class="img img-responsive social"></a> 
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+                </div>
+                <div class="col-md-2">
+                    <ul class="fLinks">
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                        <ul class="fLinks">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms and Condition</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="fPara">Adverse events should be reported. Reporting forms and information can be found at <span class="RLink">http://ghazihealthcare.com/</span> Adverse events should also be reported to Ghazi Brothers. <span class="RLink">http://ghazihealthcare.com/ </span>or +92-300-864299.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer End -->
+
+    </form>
+</body>
+</html>

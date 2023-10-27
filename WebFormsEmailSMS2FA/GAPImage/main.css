@@ -1,0 +1,548 @@
+body
+{
+    overflow-x: hidden;
+}
+
+.iconDesign
+{
+    font-size: 40px;
+    color: #ff5de9;
+    border: 10px double #ff5de9;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.txtColor
+{
+    color: #bfc0c2;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.heading
+{
+    color: white;
+    font-size: 25px;
+    background-color: #312783;
+    padding: 5px;
+}
+
+.heading2
+{
+    font-size: 25px;
+    color: #312783;
+}
+
+.hr
+{
+    border: 1px solid black;
+}
+
+.attend
+{
+    font-size: 22px;
+    color: black;
+}
+
+.color
+{
+    color: #312783;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.imgMap
+{
+    width: 100%;
+    
+    border-radius: 10px !important;
+}
+
+.canvasjs-chart-credit
+{
+    visibility: hidden;
+}
+
+.attendHeading
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.tblData tr td
+{
+    border-bottom: 3px solid grey !important;
+    border-color: grey !important;     
+}
+
+.perc
+{
+    color: #77a033 !important;
+    border-bottom: 3px solid grey !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right !important;
+}
+
+.lblName
+{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.countNames
+{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.count
+{
+    color: white;
+    font-weight: bold;
+}
+
+.box1
+{
+    background-color: #312783;
+    padding: 10px;
+}
+
+.box2
+{
+    background-color: #702283;
+    padding: 10px;
+}
+
+.box3
+{
+    background-color: #e4003a;
+    padding: 10px;
+}
+
+.box4
+{
+    background-color: #e84e0f;
+    padding: 10px;
+}
+
+.courses
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.fontSize
+{
+    font-size: 12px !important;
+}
+
+.courceCount
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f6f7d;
+}
+
+.courceCount2
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #702283;   
+}
+
+.courceCount3
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d94c04; 
+}
+
+.courseHeading
+{
+    text-align: center;
+    background-color: #e4003a;
+    color: white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.sponsHeading
+{
+    text-align: center;
+    font-size: 30px;
+    background-color: #702283;
+    color: white;
+    padding: 5px;
+}
+
+.nonSponsPerc
+{
+    text-align: center;
+    background-color: rgb(255, 115, 180);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sponsPerc
+{
+    text-align: center;
+    background-color: #312783;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.no-padding .col-md-6 , .no-padding .col-md-4
+{
+    padding: 0;
+}
+
+.speakerHeading , .speakerCount
+{
+    color: #30ca30;
+    font-weight: bold;
+    text-align: center;
+}
+
+.speakerCount
+{
+    font-size: 40px;
+}
+
+.internCount , .internHeading
+{
+    color: #312783;
+    font-weight: bold;
+    text-align: center;
+}
+
+.internCount
+{
+    font-size: 40px;
+}
+
+.nationCount , .nationHeading
+{
+    color: #d94c04;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nationCount
+{
+    font-size: 40px;
+}
+
+.interIcon
+{
+    font-size: 20px;
+    color: #312783;
+    padding: 5px;
+    box-shadow: 2px 2px #312783;
+}
+
+.nationIcon
+{
+    font-size: 20px;
+    color: #d94c04;
+    padding: 5px;
+    box-shadow: 2px 2px #d94c04;
+}
+
+.marginTop
+{
+    margin-top: 2%;
+}
+
+.topSpeakers
+{
+    color: #30ca30;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.countryList b
+{
+    font-size: 25px;
+}
+
+.countryList
+{
+    font-size: 16px;
+    color: #30ca30;
+    margin-top: 3%;
+}
+
+.spons , .nonSpons
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.spons
+{
+    color: #312783;
+}
+
+.nonSpons
+{
+    color: rgb(255, 115, 180);
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .heading {
+      font-size: 18px;
+    }
+
+    .heading2
+    {
+        font-size: 18px;
+    }
+
+    .attend
+    {
+        font-size: 18px;
+    }
+
+    .color
+    {
+        font-size: 25px;
+    }
+
+    .attendHeading
+    {
+        font-size: 18px;
+    }
+
+    .tblData .lblName
+    {
+        font-size: 14px;
+    }
+
+    .box2,.box3,.box4
+    {
+        margin-top: 2%;
+    }
+
+    .count
+    {
+        font-size: 25px;
+    }
+
+    .countNames
+    {
+        font-size: 18px;
+    }
+
+    .courseHeading
+    {
+        font-size: 18px;
+    }
+
+    .courses
+    {
+        font-size: 20px;
+    }
+
+    .courceCount , .courceCount2 , .courceCount3
+    {
+        font-size: 18px;
+    }
+
+    .marginTop
+    {
+        text-align: center;
+    }
+
+    .topSpeakers
+    {
+        font-size: 18px;
+        margin-top: 10%;
+    }
+
+    .countryList
+    {
+        font-size: 13px;
+    }
+
+    .countryList b
+    {
+        font-size: 18px;
+    }
+
+    .sponsHeading
+    {
+        font-size: 20px;
+    }
+
+    .sponsPerc , .nonSponsPerc
+    {
+        padding: 5px;
+    }
+
+    .spons , .nonSpons
+    {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .imgBanner
+    {
+        width: 100%;
+    }
+
+    .container
+    {
+        width: 90%;
+    }
+
+    .iconDesign
+    {
+        font-size: 6vh;
+        padding: 3vh;
+    }
+
+    .txtColor
+    {
+        font-size: 2vh;
+    }
+    
+    .heading
+    {
+        font-size: 4vh;
+    }
+
+    .heading2
+    {
+        font-size: 3.7vh;
+    }
+
+    .hr
+    {
+        border: 0.11vh solid black;
+    }
+
+    .attend
+    {
+        font-size: 3.2vh;
+    }
+    
+    .color
+    {
+        font-size: 6.5vh;
+    }
+
+    .attendHeading
+    {
+        font-size: 3.5vh;
+    }
+
+    .lblName
+    {
+        font-size: 2.5vh;
+    }
+
+    .perc
+    {
+        font-size: 2.5vh;
+    }
+
+    .count
+    {
+        font-size: 5vh;
+    }
+
+    .countNames
+    {
+        font-size: 2.9vh;
+    }
+
+    .box1, .box2, .box3, .box4
+    {
+        padding: 2vh;
+        margin-top: 1vh;
+    }
+
+    .courseHeading
+    {
+        font-size: 4.3vh;
+    }
+
+    .courses
+    {
+        font-size: 3.6vh;
+    }
+
+    .courceCount , .courceCount2 , .courceCount3
+    {
+        font-size: 3vh;
+    }
+
+    .fontSize
+    {
+        font-size: 2vh !important;
+    }
+
+    .speakerCount , .internCount , .nationCount
+    {
+        font-size: 6vh;
+    }
+
+    .speakerHeading , .internHeading , .nationHeading
+    {
+        font-size: 2.5vh;
+    }
+
+    .interIcon , .nationIcon
+    {
+        font-size: 3vh;
+        padding: 1vh;
+        box-shadow: 0.3vh 0.3vh;
+    }
+
+    .topSpeakers
+    {
+        font-size: 3.4vh;
+    }
+
+    .countryList
+    {
+        font-size: 2.3vh;
+    }
+
+    .countryList b
+    {
+        font-size: 3.9vh;
+    }
+
+    .sponsHeading
+    {
+        font-size: 4.3vh;
+    }
+
+    .spons , .nonSpons
+    {
+        font-size: 3vh;
+    }
+
+    .sponsPerc , .nonSponsPerc
+    {
+        font-size: 2.5vh;
+    }
+
+
+
+
+}

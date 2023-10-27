@@ -1,0 +1,167 @@
+﻿.myNav
+{
+    background-image: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+.myMenu
+{
+    padding: 15px;
+}
+
+.myMenu li a
+{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.subMenu
+{
+    background-color: #030540 !important;
+}
+
+.subMenu li a:hover
+{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+.logo
+{
+    width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 40%;
+    }
+
+    .navbar-fixed-top.scrolled {
+        height: 20px !important;
+    }
+     .fPara
+    {
+        font-size: 12px !important;
+    }
+    .fLinks li a
+    {
+        font-size: 12px !important;
+    }
+    .mobColor
+    {
+        background-color: #030540 !important;
+    }
+}
+
+.navbar-fixed-top.scrolled {
+    background-color: #030540 !important;
+    transition: background-color 200ms linear;
+    height: 100px;
+}
+
+.bgColor
+{
+    background-color: #030540;
+}
+
+.fLinks
+{
+    list-style: none;
+}
+
+.fLinks li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.RLink
+{
+    color: yellow;
+}
+
+.fPara
+{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+}
+
+.fLogo
+{
+    margin-top: 0%;
+}
+
+@media (min-width: 1400px) {
+
+    .container {
+        width: 90% !important;
+    }
+     .logo
+    {
+        width: 20vh !important;
+    }
+
+    .navbar-brand
+    {
+        width: 100%;
+    }
+
+    .myNav
+    {
+        width: 100%;
+    }
+    .myMenu li a
+    {
+        font-size: 2vh;        
+        font-size-adjust: none;
+    }
+
+    .caret
+    {
+        font-size: 10vh !important;
+    }
+     .myMenu
+    {
+        padding: 2vh;
+    }
+     .navbar-fixed-top.scrolled {
+        background-color: #030540 !important;
+        transition: background-color 200ms linear;
+        height: 12vh;
+    }
+     .row
+{
+    margin: 0;
+    padding: 0;
+}
+
+.col-md-12
+{
+    padding: 0;
+}
+
+
+    .fLogo
+    {
+        width: 20vh;
+    }
+
+    .social
+    {
+        width: 5vh;
+    }
+    .fLinks li a
+    {
+        font-size: 1.9vh !important;
+    }
+    .fPara
+    {
+        font-size: 2vh;
+    }
+}

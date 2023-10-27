@@ -1,0 +1,322 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site4.Master.cs" Inherits="WebFormsEmailSMS2FA.Site3" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <style>
+
+
+        .title{
+  font-family: 'Myriad Pro', Fallback, sans-serif;}
+        .title1{
+  font-family: 'Myriad Pro', Fallback, sans-serif;}
+        .title2{
+  font-family: 'Myriad Pro', Fallback, sans-serif;}
+        .title3{
+  font-family: 'Myriad Pro', Fallback, sans-serif;}
+
+
+@font-face {font-family: "Futura Lt BT"; src: url("//db.onlinewebfonts.com/t/19580604133dfd68ae370ddc889aedab.eot"); 
+            src: url("//db.onlinewebfonts.com/t/19580604133dfd68ae370ddc889aedab.eot?#iefix") format("embedded-opentype"), 
+                url("//db.onlinewebfonts.com/t/19580604133dfd68ae370ddc889aedab.woff2") format("woff2"), 
+                url("//db.onlinewebfonts.com/t/19580604133dfd68ae370ddc889aedab.woff") format("woff"), 
+                url("//db.onlinewebfonts.com/t/19580604133dfd68ae370ddc889aedab.ttf") format("truetype"), 
+                url("//db.onlinewebfonts.com/t/19580604133dfd68ae370ddc889aedab.svg#Futura Lt BT") format("svg"); }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('MyriadPro-Bold.eot'); /* IE9 Compat Modes */
+  src: url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('MyriadPro-Bold.woff') format('woff'), /* Modern Browsers */
+       url('MyriadPro-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('MyriadPro-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {font-family: "Futura Md BT"; src: url("//db.onlinewebfonts.com/t/e55e9079ee863276569c8a68d776ef04.eot"); 
+            src: url("//db.onlinewebfonts.com/t/e55e9079ee863276569c8a68d776ef04.eot?#iefix") format("embedded-opentype"), 
+                url("//db.onlinewebfonts.com/t/e55e9079ee863276569c8a68d776ef04.woff2") format("woff2"), 
+                url("//db.onlinewebfonts.com/t/e55e9079ee863276569c8a68d776ef04.woff") format("woff"), 
+                url("//db.onlinewebfonts.com/t/e55e9079ee863276569c8a68d776ef04.ttf") format("truetype"), 
+                url("//db.onlinewebfonts.com/t/e55e9079ee863276569c8a68d776ef04.svg#Futura Md BT") format("svg"); }
+
+@font-face {font-family: "Futura Hv BT"; src: url("//db.onlinewebfonts.com/t/af089c51d74ffa3c6a675fd6024b302b.eot"); 
+            src: url("//db.onlinewebfonts.com/t/af089c51d74ffa3c6a675fd6024b302b.eot?#iefix") format("embedded-opentype"), 
+                url("//db.onlinewebfonts.com/t/af089c51d74ffa3c6a675fd6024b302b.woff2") format("woff2"), 
+                url("//db.onlinewebfonts.com/t/af089c51d74ffa3c6a675fd6024b302b.woff") format("woff"), 
+                url("//db.onlinewebfonts.com/t/af089c51d74ffa3c6a675fd6024b302b.ttf") format("truetype"), 
+                url("//db.onlinewebfonts.com/t/af089c51d74ffa3c6a675fd6024b302b.svg#Futura Hv BT") format("svg"); }
+    </style>
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - GHAZI AESTHETIC PROGRAM</title>
+    <asp:PlaceHolder runat="server">     
+          <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>  
+    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link href="Content/SiteMaster.css" rel="stylesheet" />
+
+   <style type="text/css">
+        
+       .container1
+       {
+           width:90% !important;
+           margin:auto;
+           vertical-align:central;
+           
+       }
+
+       @media screen and (min-width:1200px)
+       {
+            .container1
+            {
+                width:90% !important;
+                margin:auto;
+                vertical-align:central;
+            }
+            .navbar-brand
+            {
+                padding:1vh;
+                vertical-align:central;
+            }
+       }
+    </style>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+
+</script>
+       <script type="text/javascript">
+    $(document).ready(function () {
+        $("#myModal").modal('show');
+    });
+    setTimeout(function () {
+        $('#myModal').modal('hide')
+    }, 10000000);
+</script>
+ <script type="text/javascript">
+     //Disable the default MouseOver functionality of ASP.Net Menu control.
+     Sys.WebForms.Menu._elementObjectMapper.getMappedObject = function () {
+         return false;
+     };
+     $(function () {
+         //Remove the style attributes.
+         $(".navbar-nav li, .navbar-nav a, .navbar-nav ul").removeAttr('style');
+
+         //Apply the Bootstrap class to the Submenu.
+         $(".dropdown-menu").closest("li").removeClass().addClass("dropdown-toggle");
+
+         //Apply the Bootstrap properties to the Submenu.
+         $(".dropdown-toggle").find("a").eq(0).attr("data-toggle", "dropdown").attr("aria-haspopup", "true").attr("aria-expanded", "false").append("<span class='caret'></span>");
+
+         //Apply the Bootstrap "active" class to the selected Menu item.
+         $("a.selected").closest("li").addClass("active");
+         $("a.selected").closest(".dropdown-toggle").addClass("active");
+     });
+ </script>
+
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+            <%--Framework Scripts--%>
+            
+            <asp:ScriptReference Name="MsAjaxBundle" />
+            <asp:ScriptReference Name="jquery" />
+            <%--<asp:ScriptReference Name="jquery.ui.combined" />--%>
+            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+            <asp:ScriptReference Name="WebFormsBundle" />
+            <%--Site Scripts--%>
+
+        </Scripts>
+    </asp:ScriptManager>
+
+         <!-- Navbar -->
+    
+    <nav class="navbar navbar-default navbar-fixed-top myNav" role="navigation">
+        <div class="container1" style="vertical-align:central;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" style="vertical-align:central;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                
+            </button>
+
+            <a class="navbar-brand" href="#" style="vertical-align:central;">
+                <img src="GAPImage/GAPLogo.png" alt="" class="img img-responsive logo" style="vertical-align:central;"/>
+            </a>
+           <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse mobColor">
+            <ul class="nav navbar-nav myMenu title">
+                <li style="font-size:x-small"><a class="title" href="https://gap.ghazihealthcare.com" style="font-size:x-small">Home</a></li>
+                
+                <li class="dropdown" style="font-size:medium">
+                    <a href="About" class="dropdown-toggle medium" data-toggle="dropdown" style="font-size:x-small">About<b class="caret"></b></a>
+                    <ul class="dropdown-menu subMenu">
+                        <li style="font-size:medium"><a class="title" href="https://gap.ghazihealthcare.com/About" style="font-size:x-small">About us</a></li>
+                       
+                        <li  class="title"><a class="title" href="https://gap.ghazihealthcare.com/Vision" style="font-size:x-small">Vision</a></li>
+                        <li  class="title"><a class="title" href="https://gap.ghazihealthcare.com/Mission " style="font-size:x-small">Mission</a></li>
+                        <li  class="title"><a class="title" href="https://gap.ghazihealthcare.com/Audience" style="font-size:x-small">Audience</a></li>
+                        <li  class="title"><a class="title" href="https://gap.ghazihealthcare.com/Education" style="font-size:x-small">Education</a></li>
+                       
+                    </ul>
+                </li>
+                <li  class="title"><a class="title" href="https://gap.ghazihealthcare.com/VideoLibrary" style="font-size:x-small">Video</a></li>
+                <li  class="title"><a class="title" href="https://gap.ghazihealthcare.com/Contact" style="font-size:x-small">Contact</a></li>
+            </ul>
+
+       <%--     <asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav myMenu navbar-right">
+                                <li><a runat="server" href="~/SignUp">Register</a></li>
+                                <li><a runat="server" href="~/Account/Login">Sign in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                       <LoggedInTemplate>
+                            <ul class="nav navbar-nav myMenu navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Sign out" LogoutPageUrl="~/Account/Login" OnLoggedOut="Unnamed_LoggedOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>--%>
+
+            <%--<ul class="nav navbar-nav navbar-right myMenu">
+                <li><a href="Account/Login">Login </a></li>
+                <li><a href="Account/Register">Register</a> </li>
+            </ul>--%>
+        </div><!-- /.navbar-collapse -->
+    </div>
+    </nav>
+    
+ <!-- Navbar End -->
+
+
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+
+
+        <br/>
+
+  <!-- Footer -->
+    <div class="bgColor">
+        <br>
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-3" style="text-align:left">
+                    <img src="GAPImage/GAPLogo.png"   class="img img-responsive fLogo" />
+
+                <div class="row">
+                    <div class="col-md-2" style="text-align:left">
+                  <a href="https://www.facebook.com/Ghazihealthcare.Official/"          style="margin-right: 5px;text-decoration: none;display:inline-block;margin-top:17px;"  target="blank"> 
+                      <img src="GAPImage/Facebook_Icon.png" alt="" class="img img-responsive social" style="width:5px"  />
+                  </a>     
+                    </div>
+                    <div class="col-md-2" style="text-align:left">
+                            <a href="https://www.instagram.com/GHAZIHEALTHCAREPAKISTAN/" style="margin-right: 5px;text-decoration: none;display:inline-block;margin-top:17px;"  target="blank">
+                                <img src="GAPImage/Instagram_Icon.png"  alt="" class="img img-responsive social" style="width:15px"   />
+                            </a> 
+                    </div>
+                    <div class="col-md-2" style="text-align:left">
+                            <a href="https://twitter.com/ghazihealthcare/"               style="margin-right: 5px;text-decoration: none;display:inline-block;margin-top:17px;"  target="blank">
+                                <img src="GAPImage/Twitter_Icon.png" alt="" class="img img-responsive social" style="width:15px"   />
+                            </a> 
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+                </div>
+                <div class="col-md-2" style="text-align:left">
+                    <ul class="fLinks">
+                        <li><a href="\Default">Home</a></li>
+                        <li><a href="\About">About</a></li>
+                        <li><a href="\VideoLibrary">Video</a></li>
+                        <li><a href="\Contact">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                        <ul class="fLinks" style="text-align:left">
+                                <li><a href="\Vision">Vision</a></li>
+                                <li><a href="\Education">Education</a></li>
+                                <li><a href="\Mission">Mission</a></li>
+                                <li><a href="\Audience">Audience</a></li>
+                        </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="fLinks" runat="server" style="color:#6380B6;align-self:flex-end;text-align:left;font-size:1.4vh;" >
+                                <li style="font-size:1.4vh;">Subscribe</li>
+                                <li style="font-size:1.4vh;">Don't miss out</li>
+                              
+                                <li><asp:TextBox ID="TextBox2" placeholder="Email address" runat="server"></asp:TextBox><a href="\Account\Register">Sign Up</a></li>
+                        </ul>
+                    <%--<div runat="server">
+                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                        <button>Sign up</button>
+                    </div>--%>
+                </div>
+                <%--<div class="col-md-4">
+                    <p class="fPara">Adverse events should be reported. Reporting forms and information can be found at <span class="RLink">http://ghazihealthcare.com/</span> Adverse events should also be reported to Ghazi Brothers. <span class="RLink">http://ghazihealthcare.com/ </span>or +92-300-864299.</p>
+                </div>--%>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    &nbsp;&nbsp;<label> ________________________________________________________________________________________________________________________________________________</label>
+                    </div>
+                </div>
+            <br />
+            <div class="row" >
+                <div class="col-md-4" style="font-size:10px;color:#6380B6">
+                &copy;<label style="color:#6380B6;">2020 gap.ghazihealthcare.com</label>
+                </div>
+                <div class="col-md-4">
+                    
+                </div>
+                <div class="col-md-4" style="color:#6380B6; text-align:center">
+                    <p style="font-size:10px;color:#6380B6">Privacy Policy | <img src="GAPImage/Globe1.jpg"  style="width:15px; background-color:#6380B6;"/> English</p>
+                </div>
+                </div>
+            <br />
+        </div>
+    </div>
+
+<!-- Footer End -->
+    </form>
+</body>
+</html>

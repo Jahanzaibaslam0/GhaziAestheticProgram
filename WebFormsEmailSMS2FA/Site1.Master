@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebFormsEmailSMS2FA.Site1" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %></title>
+    
+    <meta name="viewport" content="width=device-width" />
+    
+
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+    <%--<style type="text/css">
+        .auto-style1 {
+            width: 112px;
+            height: 35px;
+        }
+    </style>--%>
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body style="background-image:radial-gradient(#ff66cc, #ff66cc);background-repeat:repeat;">
+    <form runat="server">
+        <asp:ScriptManager runat="server" />
+        
+        <div id="wrapper" class="content-wrapper">
+            <header>
+                <div class="content-wrapper">
+                    <div style="margin:0px auto;" >
+                        <p class="site-title" style="align-content:center">
+                           
+                          <!--  <img alt="" class="auto-style1" src="Images/Logo-02.png" draggable="false" style="position: relative; top: 2px;  left: 260px;" />-->
+                           
+                            <img alt="" class="auto-style1" src="Images/GB-Logo.png" draggable="false" style="position: relative; top: 20px; height:45px; left: 380px;" />
+                        </p>
+                    </div>
+                    <div class="float-right">
+                    </div>
+                </div>
+                
+                    <div style="align-content:center" >
+                        
+                            &nbsp;</div>
+
+            </header>
+            <div id="body" class="container" style="background-color:white;border-radius:15px;padding-left:10px;padding-bottom:0px;padding-top:0px;margin-top:30px;">
+                
+                <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+                <section class="content-wrapper main-content">
+                    <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+                </section>
+            </div>
+            <footer>
+                <div class="content-wrapper container">
+                    <div class="float-left" style="color:white">
+                        <p>
+                            &copy; <%: DateTime.Now.Year %> - All Rights Reserved
+                            <br />
+                            Business Solution Team, Ghazi Brothers
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+        <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+</body>
+</html>
+
